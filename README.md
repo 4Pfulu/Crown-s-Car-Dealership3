@@ -8,8 +8,7 @@
 Crown's Car Dealership is a fictional small, independently owned car dealership based in Pretoria, Gauteng, specialising in new and pre-owned vehicles. This project is part of a three-part Portfolio of Evidence for WEDE5020, in which a fully functional, responsive, and SEO-optimised website is developed for the dealership. Part 1 covered planning and the HTML structure, Part 2 covered CSS styling and responsive design, and Part 3 adds JavaScript functionality, search engine optimisation (SEO), and deployment.
 
 ## Live Website and Repository
-- Live website: [paste your GitHub Pages link here]
-
+- Live website: https://4pfulu.github.io/Crown-s-Car-Dealership3/
 ## Website Goals and Objectives
 - Establish a professional online presence for Crown's Car Dealership.
 - Allow potential customers to browse available vehicle stock online.
