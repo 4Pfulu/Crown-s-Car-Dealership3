@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://4pfulu.github.io/crowns-car-dealership-3/sitemap.xml

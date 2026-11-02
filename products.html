@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse quality new and pre-owned cars, SUVs and bakkies at Crown's Car Dealership in Pretoria. Search, filter and sort our current stock.">
+    <title>Crown's Car Dealership | Vehicles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+            <img src="_images/gold.png" alt="Crown's Car Dealership Logo">
+            <h1>Crown's Car Dealership</h1>
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="products-intro">
+            <h2>Our Vehicles</h2>
+            <p>Browse our current range of quality new and pre-owned vehicles. Every vehicle listed has passed a
+                thorough inspection before being made available for sale.</p>
+        </section>
+
+        <section class="featured-vehicles">
+            <h2>Featured Vehicles</h2>
+
+            <div class="inventory-controls">
+                <input type="search" id="searchInput" placeholder="Search by name or type..."
+                    aria-label="Search vehicles">
+
+                <select id="typeFilter" aria-label="Filter by type">
+                    <option value="all">All types</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Bakkie">Bakkie</option>
+                    <option value="Hatchback">Hatchback</option>
+                </select>
+
+                <select id="sortSelect" aria-label="Sort vehicles">
+                    <option value="default">Sort: Default</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
+            </div>
+            <p id="resultCount" aria-live="polite"></p>
+
+            <div class="vehicle-grid">
+                <article class="vehicle-card">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="_images/bmw-m4.jpg">
+                        <source media="(max-width: 900px)" srcset="_images/bmw-m4.jpg">
+                        <img src="_images/bmw-m4.jpg" alt="Sedan for sale" loading="lazy">
+                    </picture>
+                    <h3>BMW M4 Competition</h3>
+                    <p>Reliable and fuel-efficient sedan, perfect for daily commuting.</p>
+                </article>
+
+                <article class="vehicle-card">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="_images/tiguan.jpg">
+                        <source media="(max-width: 900px)" srcset="_images/tiguan.jpg">
+                        <img src="_images/tiguan.jpg" alt="SUV for sale" loading="lazy">
+                    </picture>
+                    <h3>Volkswagen Tiguan</h3>
+                    <p>Spacious SUV ideal for families and long-distance travel.</p>
+                </article>
+
+                <article class="vehicle-card">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="_images/ford.jpg">
+                        <source media="(max-width: 900px)" srcset="_images/ford.jpg">
+                        <img src="_images/ford.jpg" alt="Bakkie for sale" loading="lazy">
+                    </picture>
+                    <h3>Ford Ranger</h3>
+                    <p>Dependable bakkie built for work and everyday use.</p>
+                </article>
+            </div>
+        </section>
+        <section class="products-cta">
+            <h3>Interested in one of our vehicles?</h3>
+            <p>Get in touch with us today to book a viewing or ask about financing options.</p>
+            <a href="enquiries.html" class="cta-button">Make an Enquiry</a>
+        </section>
+
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+        <img id="lightboxImg" src="" alt="">
+        <p id="lightboxCaption"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Crown's Car Dealership. All rights reserved.</p>
+        <p>Pretoria, Gauteng | info@crownscardealership.co.za</p>
+
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
